@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:the_shoes_x/core/resources/app_strings.dart';
 import 'package:the_shoes_x/features/splash/splash_screen.dart';
 
 class Routes {
@@ -25,10 +26,10 @@ class RouteGenerator {
   static Route<dynamic> unDefinedRoute() {
     return MaterialPageRoute(
         builder: (_) => Scaffold(
-            // appBar: AppBar(
-            //   title: Text(AppStrings.noRouteFound),
-            // ),
-            // body: Center(child: Text(AppStrings.noRouteFound)),
+              appBar: AppBar(
+                title: const Text(AppStrings.noRouteFound),
+              ),
+              body: const Center(child: Text(AppStrings.noRouteFound)),
             ));
   }
 }
