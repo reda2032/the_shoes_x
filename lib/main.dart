@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:the_shoes_x/core/resources/app_routes.dart';
 import 'package:the_shoes_x/core/resources/app_theme.dart';
 import 'package:the_shoes_x/features/splash/splash_screen.dart';
 import 'package:the_shoes_x/firebase_options.dart';
@@ -22,6 +23,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'The Shoes X',
       theme: getApplicationTheme(),
+      onGenerateRoute: RouteGenerator.getRoute,
+      initialRoute: Routes.splashRoute,
       home: const SplashScreen(),
     );
   }
