@@ -1,3 +1,5 @@
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 class AppMargin {
   static const double m8 = 8.0;
   static const double m12 = 12.0;
@@ -38,6 +40,7 @@ class AppSize {
   static const double s40 = 40.0;
   static const double s60 = 60.0;
   static const double s65 = 65.0;
+  static double s80 = 65.0.sp;
   static const double s90 = 90.0;
   static const double s100 = 100.0;
   static const double s120 = 120.0;
@@ -47,7 +50,21 @@ class AppSize {
   static const double s190 = 190.0;
 }
 
-class DurationConstant{
-  static const int d300 = 300;
+class DurationConstant {
+  static const int d3 = 3;
+}
 
+class IntValue {
+  static const maxLinesValue = 1;
+  static const letterSpacing = 5.0;
+}
+
+class DoubleValue {
+  static double textHeight = 0.20.sp;
+}
+
+class SizeBoxValue {
+  static double sizeBoxValue_24 = 24.0.sp;
+  static double sizeBoxValue_30 = 30.0.sp;
+  static double sizeBoxValue_300 = 300.0.sp;
 }

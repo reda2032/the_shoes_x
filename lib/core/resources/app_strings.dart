@@ -1,5 +1,8 @@
 class AppStrings {
   static const String noRouteFound = "no_route_found";
+  static const String shoesX = "ShoesX";
+  static const String passionForShoes = "Passion for shoes";
+
   static const String skip = "skip";
   static const String username = "username_hint";
   static const String mobileNumber = "mobile_number_hint";

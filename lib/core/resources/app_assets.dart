@@ -2,7 +2,7 @@ const String imagePath = "assets/images";
 const String jsonPath = "assets/json";
 
 class AppImageAssets {
-//  static const String splashLogo = "$imagePath/splash_logo.png";
+  static const String splashLogo = "$imagePath/logo.svg";
 }
 
 class JsonAssets {

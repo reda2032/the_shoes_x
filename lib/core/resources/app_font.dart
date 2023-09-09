@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FontConstants {
   static const String fontFamily = "Raleway";
@@ -13,12 +14,12 @@ class AppFontWeight {
 }
 
 class AppFontSize {
-  static const double s12 = 12.0;
-  static const double s13 = 13.0;
-  static const double s14 = 14.0;
-  static const double s16 = 16.0;
-  static const double s17 = 17.0;
-  static const double s18 = 18.0;
-  static const double s20 = 20.0;
-  static const double s41 = 41.0;
+  static double s12 = 12.0.sp;
+  static double s13 = 13.0.sp;
+  static double s14 = 14.0.sp;
+  static double s16 = 16.0.sp;
+  static double s17 = 17.0.sp;
+  static double s18 = 18.0.sp;
+  static double s20 = 20.0.sp;
+  static double s41 = 41.0.sp;
 }

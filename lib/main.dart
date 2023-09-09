@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:the_shoes_x/core/resources/app_routes.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:the_shoes_x/core/resources/app_theme.dart';
 import 'package:the_shoes_x/features/splash/splash_screen.dart';
 import 'package:the_shoes_x/firebase_options.dart';
@@ -19,13 +19,18 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'The Shoes X',
-      theme: getApplicationTheme(),
-      onGenerateRoute: RouteGenerator.getRoute,
-      initialRoute: Routes.splashRoute,
-      home: const SplashScreen(),
+    return ScreenUtilInit(
+      designSize: const Size(360, 690),
+      minTextAdapt: true,
+      splitScreenMode: true,
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'The Shoes X',
+        theme: getApplicationTheme(),
+        // onGenerateRoute: RouteGenerator.getRoute,
+        // initialRoute: Routes.splashRoute,
+        home: const SplashScreen(),
+      ),
     );
   }
 }
